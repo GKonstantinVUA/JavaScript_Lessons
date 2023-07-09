@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="shortcut icon" href="img/favicon_task.ico" type="image/x-icon">
+	<title>Завдання #5</title>
+</head>
+<body>
+	<div class="wrapper wrapper_block">
+
+		<header class="header header_container">
+			<div class="content content_head">
+				<img src="img/logo_lesson_2.svg" alt="logo" class="logo logo_lesson">
+				<h1 class="title title_lessons">Величини. Типи величин</h1>
+			</div>
+		</header>
+
+		<main class="main main_block">
+
+			<div class="menu menu_navigation">
+				<a href="../lessons_main/index.html" target="_blank" title="Головне меню" class="icon icon_course"><img src="img/home.svg" alt="main_menu"></a>
+				<a href="index.html" target="_blank" title="Назад" class="icon icon_up"><img src="img/level_up.svg" alt="main_menu"></a>
+			</div>
+
+				<section class="tasks tasks_box">
+					<h3 class="caption caption_tasks-main">Завдання #5</h3>
+					<div class="depiction depiction_task">Дано кількість секунд, що пройшла від початку доби.</div>
+					<div class="depiction depiction_task">Визначити скільки це годин і хвилин.</div>
+					<a href=javascript:document.location.reload() title="Повторно виконати завдання"><img src="img/repeat_task.svg" alt="task_start" class="repeat repeat_task"></a>
+				</section>
+
+				<section class="tasks tasks_box">
+					<h3 class="caption caption_tasks-main">Розв'язання завдання #5</h3>
+					<div class="depiction depiction_task">Визначення одиниць вимірювання часу:</div>
+
+					<script>
+						let valueInSecond=parseInt(prompt('Введіть значення в секундах', 'Введіть значення'))
+						const SECOND_IN_MINUTE=60
+						const SECOND_IN_HOURE=3600
+
+						let valueInMinutes=Math.floor((valueInSecond%SECOND_IN_HOURE)/SECOND_IN_MINUTE)
+						let meaningInTimes=Math.floor(valueInSecond/SECOND_IN_HOURE)
+
+							document.write(`<h3 class="task-caption task-caption_decision">Вхідні дані:</h3>
+											<div class="result-task result-task_decision">Введене значення у секундах: <span class="value-task value-task_view"> ${valueInSecond} сек </span> </div>
+											<h3 class="task-caption task-caption_decision">Результати обчислень:</h3>
+											<div class="result-task result-task_decision"> Від початку доби пройшло: <span class="value-task value-task_view"> ${meaningInTimes} год. </span> <span class="value-task value-task_view-houre"> : </span> <span class="value-task value-task_view-houre"> ${valueInMinutes} хв. </span> </div>`)
+					</script>
+				</section>
+		</main>
+		<footer class="footer footer_block"></footer>
+	</div>
+</body>
+</html>
