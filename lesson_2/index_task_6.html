@@ -39,16 +39,16 @@
 
 						<script>
 								let firstProduct=(prompt('Введіть назву першого товару', 'Назва товару'))
-								let quantityFirstProduct=parseFloat(prompt(`Введіть кількість для ${firstProduct} (одн./кг)`, 'Кількість товару'))
-								let unitFirstСostProduct=parseFloat(prompt(`Введить вартість для ${firstProduct} (грн.)`, 'Вартість товару'))
+								let quantityFirstProduct=parseFloat(prompt(`Введіть кількість для ${firstProduct.toUpperCase()} (одн./кг)`, 'Кількість товару'))
+								let unitFirstСostProduct=parseFloat(prompt(`Введить вартість для ${firstProduct.toUpperCase()} (грн.)`, 'Вартість товару'))
 
 								let secondaryProduct=(prompt('Введіть назву другого товару', 'Назва товару'))
-								let quantitySecondaryProduct=parseFloat(prompt(`Введіть кількість для ${secondaryProduct} (одн./кг)`, 'Кількість товару'))
-								let unitSecondaryСostProduct=parseFloat(prompt(`Введить вартість для ${secondaryProduct} (грн.)`, 'Вартість товару'))
+								let quantitySecondaryProduct=parseFloat(prompt(`Введіть кількість для ${secondaryProduct.toUpperCase()} (одн./кг)`, 'Кількість товару'))
+								let unitSecondaryСostProduct=parseFloat(prompt(`Введить вартість для ${secondaryProduct.toUpperCase()} (грн.)`, 'Вартість товару'))
 
 								let thirdProduct=(prompt('Введіть назву третього товару', 'Назва товару'))
-								let quantityThirdProduct=parseFloat(prompt(`Введіть кількість для ${thirdProduct} (одн./кг)`, 'Кількість товару'))
-								let unitThirdСostProduct=parseFloat(prompt(`Введіть кількість для ${thirdProduct} (одн./кг)`, 'Вартість товару'))
+								let quantityThirdProduct=parseFloat(prompt(`Введіть кількість для ${thirdProduct.toUpperCase()} (одн./кг)`, 'Кількість товару'))
+								let unitThirdСostProduct=parseFloat(prompt(`Введіть кількість для ${thirdProduct.toUpperCase()} (одн./кг)`, 'Вартість товару'))
 
 								let totalPriceFirstProduct=quantityFirstProduct*unitFirstСostProduct
 								let totalPriceSecondaryProduct=quantitySecondaryProduct*unitSecondaryСostProduct
@@ -72,9 +72,9 @@
 								</div>
 								<hr class="container container_setup line line_dotted">
 								<div class="container container_setup data data_calculated">
-									<div class="product product_name">${firstProduct}: <br> <span class="product product_quantity product_setup">${quantityFirstProduct}</span> <span class="product product_increase product_setup">Х</span> <span class="product product_cost product_setup"> ${unitFirstСostProduct}</span> <span class="product product_equals product_setup">=</span> <span class="product product_price product_setup">${totalPriceFirstProduct.toFixed (2)}</span> грн.</div>
-									<div class="product product_name">${secondaryProduct}: <br> <span class="product product_quantity product_setup">${quantitySecondaryProduct}</span> <span class="product product_increase product_setup">Х</span> <span class="product product_cost product_setup"> ${unitSecondaryСostProduct}</span> <span class="product product_equals product_setup">=</span> <span class="product product_price product_setup">${totalPriceSecondaryProduct.toFixed (2)}</span> грн.</div>
-									<div class="product product_name">${thirdProduct}: <br> <span class="product product_quantity product_setup">${quantityThirdProduct}</span> <span class="product product_increase product_setup">Х</span> <span class="product product_cost product_setup"> ${unitThirdСostProduct}</span> <span class="product product_equals product_setup">=</span> <span class="product product_price product_setup">${totalPriceThirdProduct.toFixed (2)}</span> грн.</div>
+									<div class="product product_name">${firstProduct.toUpperCase()}: <br> <span class="product product_quantity product_setup">${quantityFirstProduct}</span> <span class="product product_increase product_setup">Х</span> <span class="product product_cost product_setup"> ${unitFirstСostProduct}</span> <span class="product product_equals product_setup">=</span> <span class="product product_price product_setup">${totalPriceFirstProduct.toFixed (2)}</span> грн.</div>
+									<div class="product product_name">${secondaryProduct.toUpperCase()}: <br> <span class="product product_quantity product_setup">${quantitySecondaryProduct}</span> <span class="product product_increase product_setup">Х</span> <span class="product product_cost product_setup"> ${unitSecondaryСostProduct}</span> <span class="product product_equals product_setup">=</span> <span class="product product_price product_setup">${totalPriceSecondaryProduct.toFixed (2)}</span> грн.</div>
+									<div class="product product_name">${thirdProduct.toUpperCase()}: <br> <span class="product product_quantity product_setup">${quantityThirdProduct}</span> <span class="product product_increase product_setup">Х</span> <span class="product product_cost product_setup"> ${unitThirdСostProduct}</span> <span class="product product_equals product_setup">=</span> <span class="product product_price product_setup">${totalPriceThirdProduct.toFixed (2)}</span> грн.</div>
 								</div>
 								<hr class="container container_setup line line_dotted">
 								<div class="container container_setup total total_check">Сума: <span class="product product_total-price">${totalPriceProducts.toFixed (2)} грн.</span></div>

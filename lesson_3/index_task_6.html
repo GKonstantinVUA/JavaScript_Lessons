@@ -37,47 +37,47 @@
 						<div class="depiction depiction_task">Визначення назви дня тижня:</div>
 
 							<script>
-									const DAY_OF_THE_WEEK_NUMBER=prompt('Введіть день тижня у числовому форматі','Номер тижня')
+									const dayOfTheWeekNumber=prompt('Введіть день тижня у числовому форматі','Номер тижня')
 									let nameOfTheDayOfTheWeek
 
-									switch (DAY_OF_THE_WEEK_NUMBER) {
+									switch (dayOfTheWeekNumber) {
 										case '1':nameOfTheDayOfTheWeek=(`<h3 class="task-caption task-caption_decision">Вхідні дані:</h3>
-													<div class="result-task result-task_decision">Введений номер тижня: <span class="value-task value-task_view"> ${DAY_OF_THE_WEEK_NUMBER}</span> </div>
+													<div class="result-task result-task_decision">Введений номер тижня: <span class="value-task value-task_view"> ${dayOfTheWeekNumber}</span> </div>
 													<h3 class="task-caption task-caption_decision">Результати обчислень:</h3>
 													<div class="result-task result-task_decision">Номер тижня відноситься до: <span class="value-task value-task_view"> Понеділка </span> </div>`)
 									break;
 										case '2':nameOfTheDayOfTheWeek=(`<h3 class="task-caption task-caption_decision">Вхідні дані:</h3>
-													<div class="result-task result-task_decision">Введений номер тижня: <span class="value-task value-task_view"> ${DAY_OF_THE_WEEK_NUMBER}</span> </div>
+													<div class="result-task result-task_decision">Введений номер тижня: <span class="value-task value-task_view"> ${dayOfTheWeekNumber}</span> </div>
 													<h3 class="task-caption task-caption_decision">Результати обчислень:</h3>
 													<div class="result-task result-task_decision">Номер тижня відноситься до: <span class="value-task value-task_view"> Вівторка </span> </div>`)
 									break;
 										case '3':nameOfTheDayOfTheWeek=(`<h3 class="task-caption task-caption_decision">Вхідні дані:</h3>
-													<div class="result-task result-task_decision">Введений номер тижня: <span class="value-task value-task_view"> ${DAY_OF_THE_WEEK_NUMBER}</span> </div>
+													<div class="result-task result-task_decision">Введений номер тижня: <span class="value-task value-task_view"> ${dayOfTheWeekNumber}</span> </div>
 													<h3 class="task-caption task-caption_decision">Результати обчислень:</h3>
 													<div class="result-task result-task_decision">Номер тижня відноситься до: <span class="value-task value-task_view"> Середи </span> </div>`)
 									break;
 										case '4':nameOfTheDayOfTheWeek=(`<h3 class="task-caption task-caption_decision">Вхідні дані:</h3>
-													<div class="result-task result-task_decision">Введений номер тижня: <span class="value-task value-task_view"> ${DAY_OF_THE_WEEK_NUMBER}</span> </div>
+													<div class="result-task result-task_decision">Введений номер тижня: <span class="value-task value-task_view"> ${dayOfTheWeekNumber}</span> </div>
 													<h3 class="task-caption task-caption_decision">Результати обчислень:</h3>
 													<div class="result-task result-task_decision">Номер тижня відноситься до: <span class="value-task value-task_view"> Четверга </span> </div>`)
 									break;
 										case '5':nameOfTheDayOfTheWeek=(`<h3 class="task-caption task-caption_decision">Вхідні дані:</h3>
-													<div class="result-task result-task_decision">Введений номер тижня: <span class="value-task value-task_view"> ${DAY_OF_THE_WEEK_NUMBER}</span> </div>
+													<div class="result-task result-task_decision">Введений номер тижня: <span class="value-task value-task_view"> ${dayOfTheWeekNumber}</span> </div>
 													<h3 class="task-caption task-caption_decision">Результати обчислень:</h3>
 													<div class="result-task result-task_decision">Номер тижня відноситься до: <span class="value-task value-task_view"> П'ятниці </span> </div>`)
 									break;
 										case '6':nameOfTheDayOfTheWeek=(`<h3 class="task-caption task-caption_decision">Вхідні дані:</h3>
-													<div class="result-task result-task_decision">Введений номер тижня: <span class="value-task value-task_view"> ${DAY_OF_THE_WEEK_NUMBER}</span> </div>
+													<div class="result-task result-task_decision">Введений номер тижня: <span class="value-task value-task_view"> ${dayOfTheWeekNumber}</span> </div>
 													<h3 class="task-caption task-caption_decision">Результати обчислень:</h3>
 													<div class="result-task result-task_decision">Номер тижня відноситься до: <span class="value-task value-task_view"> Суботи </span> </div>`)
 									break;
 										case '7':nameOfTheDayOfTheWeek=(`<h3 class="task-caption task-caption_decision">Вхідні дані:</h3>
-													<div class="result-task result-task_decision">Введений номер тижня: <span class="value-task value-task_view"> ${DAY_OF_THE_WEEK_NUMBER}</span> </div>
+													<div class="result-task result-task_decision">Введений номер тижня: <span class="value-task value-task_view"> ${dayOfTheWeekNumber}</span> </div>
 													<h3 class="task-caption task-caption_decision">Результати обчислень:</h3>
 													<div class="result-task result-task_decision">Номер тижня відноситься до: <span class="value-task value-task_view"> Неділі </span> </div>`)
 									break;
 										default:nameOfTheDayOfTheWeek=(`<h3 class="task-caption task-caption_decision">Вхідні дані:</h3>
-													<div class="result-task result-task_decision">Введений номер тижня: <span class="value-task value-task_view"> ${DAY_OF_THE_WEEK_NUMBER}</span> </div>
+													<div class="result-task result-task_decision">Введений номер тижня: <span class="value-task value-task_view"> ${dayOfTheWeekNumber}</span> </div>
 													<h3 class="task-caption task-caption_decision">Результати обчислень:</h3>
 													<div class="result-task result-task_decision result-task_error">Помилка! <br> Номер дня тижня введено з помилкою, <br> або він відсутній у загальному переліку</div>`)
 									}
