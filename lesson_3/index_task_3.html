@@ -43,29 +43,21 @@
 									let numberToEnter=parseInt(prompt('Перша спроба', 'Введіть число'))
 
 									if (numberToEnter===randomValue)
-									resultTaskThree =(`<h3 class="task-caption task-caption_decision">Вхідні дані:</h3>
-											<div class="result-task result-task_decision">Рандомне число дорівнює: <span class="value-task value-task_view"> ${randomValue} </span> </div>
-											<div class="result-task result-task_decision">Значення яке Ви ввели: <span class="value-task value-task_view"> ${numberToEnter} </span> </div>
-											<h3 class="task-caption task-caption_decision">Результати обчислень:</h3>
-											<div class="result-task result-task_decision result-task_congratulations">Поздоровляємо! <br> Ви вгадали число з першої спроби!</div>`)
+									resultTaskThree =('Поздоровляємо! <br> Ви вгадали число з першої спроби!')
 
 									else {
 										numberToEnter=parseInt(prompt('На жаль Ви не вгадали. Зробіть другу спробу', 'Введіть число'))
 									
 										if (numberToEnter===randomValue)
-									resultTaskThree =(`<h3 class="task-caption task-caption_decision">Вхідні дані:</h3>
-											<div class="result-task result-task_decision">Рандомне число дорівнює: <span class="value-task value-task_view"> ${randomValue} </span> </div>
-											<div class="result-task result-task_decision">Значення яке Ви ввели: <span class="value-task value-task_view"> ${numberToEnter} </span> </div>
-											<h3 class="task-caption task-caption_decision">Результати обчислень:</h3>
-											<div class="result-task result-task_decision result-task_congratulations">Поздоровляємо! <br> Ви вгадали число з другої спроби!</div>`)
+									resultTaskThree =('Поздоровляємо! <br> Ви вгадали число з другої спроби!')
 
 									else
-										resultTaskThree =(`<h3 class="task-caption task-caption_decision">Вхідні дані:</h3>
-											<div class="result-task result-task_decision">Рандомне число дорівнює: <span class="value-task value-task_view"> ${randomValue} </span> </div>
-											<h3 class="task-caption task-caption_decision">Результати обчислень:</h3>
-											<div class="result-task result-task_decision result-task_error">Ви програли! <br> На жаль, Ви не вгадали число <br> ні з одніє із спроб.</div>`)
+										resultTaskThree =(`<div class="result-task result-task_decision result-task_error">Ви програли! <br> На жаль, Ви не вгадали число <br> ні з одніє із спроб.</div>`)
 										}
-									document.write (resultTaskThree)
+									document.write (`<h3 class="task-caption task-caption_decision">Вхідні дані:</h3>
+											<div class="result-task result-task_decision">Рандомне число дорівнює: <span class="value-task value-task_view"> ${randomValue} </span> </div>
+											<div class="result-task result-task_decision">Значення яке Ви ввели: <span class="value-task value-task_view"> ${numberToEnter} </span> </div>
+											<h3 class="task-caption task-caption_decision">Результати обчислень:</h3> <div class="result-task result-task_decision result-task_congratulations"> ${resultTaskThree}</div>`)
 							</script>
 					</section>
 			</main>

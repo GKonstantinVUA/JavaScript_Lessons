@@ -44,28 +44,18 @@
 									let resultTaskTwo
 
 									if (amountOfMoneyUser<priceOfProduct)
-									resultTaskTwo=(`<h3 class="task-caption task-caption_decision">Вхідні дані:</h3>
-										<div class="result-task result-task_decision">Ціна одиниці товару: <span class="value-task value-task_view"> ${priceOfProduct} грн. </span> </div>
-										<div class="result-task result-task_decision">Кількість грошей: <span class="value-task value-task_view"> ${amountOfMoneyUser} грн. </span> </div>
-										<h3 class="task-caption task-caption_decision">Результати обчислень:</h3>
-										<div class="result-task result-task_decision">У Вас не достатньо коштів для покупки товару <img class="money money_not-buy" src="img/not_money.svg" alt="not money"> </div>`)
+									resultTaskTwo=(`У Вас не достатньо коштів для покупки товару <img class="money money_not-buy" src="img/not_money.svg" alt="not money">`)
 										
 									else {
-									resultTaskTwo=(`<h3 class="task-caption task-caption_decision">Вхідні дані:</h3>
-										<div class="result-task result-task_decision">Ціна одиниці товару: <span class="value-task value-task_view"> ${priceOfProduct} грн. </span> </div>
-										<div class="result-task result-task_decision">Кількість грошей: <span class="value-task value-task_view"> ${amountOfMoneyUser} грн. </span> </div>
-										<h3 class="task-caption task-caption_decision">Результати обчислень:</h3>
-										<div class="result-task result-task_decision">У Вас достатньо коштів для покупки товару <img class="money money_buy" src="img/money.svg" alt="money"> </div>`)
+									resultTaskTwo=(`У Вас достатньо коштів для покупки товару <img class="money money_buy" src="img/money.svg" alt="money">`)
 									
 									if (amountOfMoneyUser-priceOfProduct>=lotteryTicketPrice)
-									resultTaskTwo=(`<h3 class="task-caption task-caption_decision">Вхідні дані:</h3>
+									resultTaskTwo=(`У вас достатній залишок коштів щоб придбати: <img class="lottery lottery_ticket" src="img/lottery_ticket.svg" alt="lottery_ticket">`)
+									}
+									document.write(`<h3 class="task-caption task-caption_decision">Вхідні дані:</h3>
 										<div class="result-task result-task_decision">Ціна одиниці товару: <span class="value-task value-task_view"> ${priceOfProduct} грн. </span> </div>
 										<div class="result-task result-task_decision">Кількість грошей: <span class="value-task value-task_view"> ${amountOfMoneyUser} грн. </span> </div>
-										<h3 class="task-caption task-caption_decision">Результати обчислень:</h3>
-										<div class="result-task result-task_decision">У вас достатній залишок коштів щоб придбати:</div>
-										<img class="lottery lottery_ticket" src="img/lottery_ticket.svg" alt="lottery_ticket">`)
-									}
-									document.write(resultTaskTwo)
+										<h3 class="task-caption task-caption_decision">Результати обчислень:</h3> <div class="result-task result-task_decision">${resultTaskTwo}</div>`)
 							</script>
 					</section>
 			</main>

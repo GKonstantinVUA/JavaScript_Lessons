@@ -42,31 +42,20 @@
 									let resultSeason
 
 									if (monthNumber<1 || monthNumber>12)
-										resultSeason=(`<h3 class="task-caption task-caption_decision">Вхідні дані:</h3>
-														<div class="result-task result-task_decision">Введений номер місяця: <span class="value-task value-task_view"> ${monthNumber}</span> </div>
-														<h3 class="task-caption task-caption_decision">Результати обчислень:</h3>
-														<div class="result-task result-task_decision result-task_error">Помилка!!! <br> Номер місяця введено з помилкою, <br> або він відсутній у загальному переліку</div>`)
+										resultSeason=(`<div class="result-task result-task_decision result-task_error">Помилка!!! <br> 
+													Номер місяця введено з помилкою, <br> або він відсутній у загальному переліку</div>`)
 									else if (monthNumber===12||monthNumber<3)
-										resultSeason=(`<h3 class="task-caption task-caption_decision">Вхідні дані:</h3>
-														<div class="result-task result-task_decision">Введений номер місяця: <span class="value-task value-task_view"> ${monthNumber}</span> </div>
-														<h3 class="task-caption task-caption_decision">Результати обчислень:</h3>
-														<div class="result-task result-task_decision">Місяць відноситься до пори року: <span class="value-task value-task_view"> Зима </span> </div>`)
+										resultSeason=('Зима')
 									else if (monthNumber<6)
-										resultSeason=(`<h3 class="task-caption task-caption_decision">Вхідні дані:</h3>
-														<div class="result-task result-task_decision">Введений номер місяця: <span class="value-task value-task_view"> ${monthNumber}</span> </div>
-														<h3 class="task-caption task-caption_decision">Результати обчислень:</h3>
-														<div class="result-task result-task_decision">Місяць відноситься до пори року: <span class="value-task value-task_view"> Весна </span> </div>`)
+										resultSeason=('Весна')
 									else if (monthNumber<9)
-										resultSeason=(`<h3 class="task-caption task-caption_decision">Вхідні дані:</h3>
-														<div class="result-task result-task_decision">Введений номер місяця: <span class="value-task value-task_view"> ${monthNumber}</span> </div>
-														<h3 class="task-caption task-caption_decision">Результати обчислень:</h3>
-														<div class="result-task result-task_decision">Місяць відноситься до пори року: <span class="value-task value-task_view"> Літо </span> </div>`)
+										resultSeason=('Літо')
 									else
-										resultSeason=(`<h3 class="task-caption task-caption_decision">Вхідні дані:</h3>
+										resultSeason=('Осінь')
+									document.write(`<h3 class="task-caption task-caption_decision">Вхідні дані:</h3>
 														<div class="result-task result-task_decision">Введений номер місяця: <span class="value-task value-task_view"> ${monthNumber}</span> </div>
-														<h3 class="task-caption task-caption_decision">Результати обчислень:</h3>
-														<div class="result-task result-task_decision">Місяць відноситься до пори року: <span class="value-task value-task_view"> Осінь </span> </div>`)
-									document.write(resultSeason)
+														<h3 class="task-caption task-caption_decision">Результати обчислень:</h3> <div class="result-task result-task_decision"> 
+														Місяць відноситься до пори року: <span class="value-task value-task_view">${resultSeason}</span> </div>`)
 							</script>
 					</section>
 			</main>

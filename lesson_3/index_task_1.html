@@ -47,29 +47,20 @@
 									let candyComparisonResult
 									
 									if (numberSweetsFirstChild===numberSweetsSecondChild)
-									candyComparisonResult=(`<h3 class="task-caption task-caption_decision">Вхідні дані:</h3>
-													<div class="result-task result-task_decision"><span class="name-child name-child_view">${firstNameChild.toUpperCase()}</span>: <span class="value-task value-task_view"> ${numberSweetsFirstChild} цукерки(ок) </span> </div>
-													<div class="result-task result-task_decision"><span class="name-child name-child_view">${secondNameChild.toUpperCase()}</span>: <span class="value-task value-task_view"> ${numberSweetsSecondChild} цукерки(ок) </span> </div>
-													<h3 class="task-caption task-caption_decision">Результати обчислень:</h3>
-													<div class="result-task result-task_decision"><span class="name-child name-child_view">${firstNameChild.toUpperCase()}</span> <img class="candy candy_more" src="img/more_candy.svg" alt="candy"> та <span class="name-child name-child_view">${secondNameChild.toUpperCase()}</span> <img class="candy candy_more" src="img/more_candy.svg" alt="candy"> мають однакову кількість цукерок </div>
+									candyComparisonResult=(`${firstNameChild.toUpperCase()} <img class="candy candy_more" src="img/more_candy.svg" alt="candy"> та ${secondNameChild.toUpperCase()} <img class="candy candy_more" src="img/more_candy.svg" alt="candy"> мають однакову кількість цукерок
 													`)
 									
 									else if (numberSweetsFirstChild>numberSweetsSecondChild)
-									candyComparisonResult=(`<h3 class="task-caption task-caption_decision">Вхідні дані:</h3>
-													<div class="result-task result-task_decision"><span class="name-child name-child_view">${firstNameChild.toUpperCase()}</span>: <span class="value-task value-task_view"> ${numberSweetsFirstChild} цукерки(ок) </span> </div>
-													<div class="result-task result-task_decision"><span class="name-child name-child_view">${secondNameChild.toUpperCase()}</span>: <span class="value-task value-task_view"> ${numberSweetsSecondChild} цукерки(ок) </span> </div>
-													<h3 class="task-caption task-caption_decision">Результати обчислень:</h3>
-													<div class="result-task result-task_decision"><span class="name-child name-child_view">${firstNameChild.toUpperCase()}</span> <img class="candy candy_more" src="img/more_candy.svg" alt="candy"> має більше цукерок ніж <span class="name-child name-child_view">${secondNameChild.toUpperCase()} <img class="candy candy_more" src="img/candy_less.svg" alt="candy"> </div>
+									candyComparisonResult=(`${firstNameChild.toUpperCase()} <img class="candy candy_more" src="img/more_candy.svg" alt="candy"> має більше цукерок ніж ${secondNameChild.toUpperCase()} <img class="candy candy_more" src="img/candy_less.svg" alt="candy">
 													`)
 
 									else
-									candyComparisonResult=(`<h3 class="task-caption task-caption_decision">Вхідні дані:</h3>
+									candyComparisonResult=(`${secondNameChild.toUpperCase()} <img class="candy candy_more" src="img/more_candy.svg" alt="candy"> має більше цукерок ніж ${firstNameChild.toUpperCase()} <img class="candy candy_more" src="img/candy_less.svg" alt="candy">
+													`)
+									document.write (`<h3 class="task-caption task-caption_decision">Вхідні дані:</h3>
 													<div class="result-task result-task_decision"><span class="name-child name-child_view">${firstNameChild.toUpperCase()}</span>: <span class="value-task value-task_view"> ${numberSweetsFirstChild} цукерки(ок) </span> </div>
 													<div class="result-task result-task_decision"><span class="name-child name-child_view">${secondNameChild.toUpperCase()}</span>: <span class="value-task value-task_view"> ${numberSweetsSecondChild} цукерки(ок) </span> </div>
-													<h3 class="task-caption task-caption_decision">Результати обчислень:</h3>
-													<div class="result-task result-task_decision"><span class="name-child name-child_view">${secondNameChild.toUpperCase()}</span> <img class="candy candy_more" src="img/more_candy.svg" alt="candy"> має більше цукерок ніж <span class="name-child name-child_view"> ${firstNameChild.toUpperCase()} </span> <img class="candy candy_more" src="img/candy_less.svg" alt="candy"> </div>
-													`)
-									document.write (candyComparisonResult)
+													<h3 class="task-caption task-caption_decision">Результати обчислень:</h3> <div class="result-task result-task_decision"><span class="name-child name-child_view">${candyComparisonResult}</span> </div>`)
 							</script>
 					</section>
 			</main>

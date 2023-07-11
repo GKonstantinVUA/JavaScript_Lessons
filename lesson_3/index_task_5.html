@@ -42,27 +42,18 @@
 									let resultTaskFive
 
 									switch (nameCategoryDriver.toUpperCase()) {
-										case 'A': resultTaskFive=(`<h3 class="task-caption task-caption_decision">Вхідні дані:</h3>
-													<div class="result-task result-task_decision">Категорія водія: <span class="value-task value-task_view value-task_category-driver"> ${nameCategoryDriver}</span> </div>
-													<h3 class="task-caption task-caption_decision">Результати обчислень:</h3>
-													<div class="result-task result-task_decision">Відповідій категорії дозволено керувати: <span class="value-task value-task_view"> Мотоциклом </span> </div>`)
+										case 'A': resultTaskFive=(`<span class="value-task value-task_view"> Мотоциклом </span>`)
 									break;
-										case 'B': resultTaskFive=(`<h3 class="task-caption task-caption_decision">Вхідні дані:</h3>
-													<div class="result-task result-task_decision">Категорія водія: <span class="value-task value-task_view value-task_category-driver"> ${nameCategoryDriver}</span> </div>
-													<h3 class="task-caption task-caption_decision">Результати обчислень:</h3>
-													<div class="result-task result-task_decision">Відповідій категорії дозволено керувати: <span class="value-task value-task_view"> Легковим автомобілем </span> </div>`)
+										case 'B': resultTaskFive=(`<span class="value-task value-task_view"> Легковим автомобілем </span>`)
 									break;
-										case 'C': resultTaskFive=(`<h3 class="task-caption task-caption_decision">Вхідні дані:</h3>
-													<div class="result-task result-task_decision">Категорія водія: <span class="value-task value-task_view value-task_category-driver"> ${nameCategoryDriver}</span> </div>
-													<h3 class="task-caption task-caption_decision">Результати обчислень:</h3>
-													<div class="result-task result-task_decision">Відповідій категорії дозволено керувати: <span class="value-task value-task_view"> Вантажним автомобілем </span> </div>`)
+										case 'C': resultTaskFive=(`<span class="value-task value-task_view"> Вантажним автомобілем </span>`)
 									break;
-										default: resultTaskFive=(`<h3 class="task-caption task-caption_decision">Вхідні дані:</h3>
-													<div class="result-task result-task_decision">Категорія водія: <span class="value-task value-task_view value-task_category-driver"> ${nameCategoryDriver}</span> </div>
-													<h3 class="task-caption task-caption_decision">Результати обчислень:</h3>
-													<div class="result-task result-task_decision result-task_error"> Помилка! <br> Категорія водія введена з помилкою, <br> або відсутня в загальному переліку </div>`)
+										default: resultTaskFive=(`<div class="result-task result-task_decision result-task_error"> Помилка! <br> Категорія водія введена з помилкою, <br> або відсутня в загальному переліку </div>`)
 									}
-									document.write(resultTaskFive)
+									document.write(`<h3 class="task-caption task-caption_decision">Вхідні дані:</h3>
+													<div class="result-task result-task_decision">Категорія водія: <span class="value-task value-task_view value-task_category-driver"> ${nameCategoryDriver}</span> </div>
+													<h3 class="task-caption task-caption_decision">Результати обчислень:</h3> 
+													<div class="result-task result-task_decision">Відповідій категорії дозволено керувати: ${resultTaskFive}</div>`)
 							</script>
 					</section>
 			</main>

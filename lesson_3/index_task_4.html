@@ -42,47 +42,26 @@
 									let resultTaskFour
 
 									if (personAge<1 || personAge>110)
-									resultTaskFour=(`<h3 class="task-caption task-caption_decision">Вхідні дані:</h3>
-													<div class="result-task result-task_decision">Вік людини складає: <span class="value-task value-task_view"> ${personAge} роки(ів) </span> </div>
-													<h3 class="task-caption task-caption_decision">Результати обчислень:</h3>
-													<div class="result-task result-task_decision result-task_error">Помилка! <br> Введіть корректно вік людини</div>`)
+									resultTaskFour=(`<div class="result-task result-task_decision result-task_error">Помилка! <br> Введіть корректно вік людини</div>`)
 
 									else if(personAge<7)
-									resultTaskFour=(`<h3 class="task-caption task-caption_decision">Вхідні дані:</h3>
-													<div class="result-task result-task_decision">Вік людини складає: <span class="value-task value-task_view"> ${personAge} роки(ів) </span> </div>
-													<h3 class="task-caption task-caption_decision">Результати обчислень:</h3>
-													<div class="result-task result-task_decision">Людина відноситься до категорії: <span class="value-task value-task_view"> Дитина дошкільного віку </span> </div>
-													<img class="category category_person" src="img/preschool_age.svg" alt="preschool">`)
+									resultTaskFour=(`Дитина дошкільного віку <img class="category category_person" src="img/preschool_age.svg" alt="preschool">`)
 
 									else if(personAge<18)
-									resultTaskFour=(`<h3 class="task-caption task-caption_decision">Вхідні дані:</h3>
-													<div class="result-task result-task_decision">Вік людини складає: <span class="value-task value-task_view"> ${personAge} роки(ів) </span> </div>
-													<h3 class="task-caption task-caption_decision">Результати обчислень:</h3>
-													<div class="result-task result-task_decision">Людина відноситься до категорії: <span class="value-task value-task_view"> Дитина шільного віку </span> </div>
-													<img class="category category_person" src="img/school_age.svg" alt="school">`)
+									resultTaskFour=(`Дитина шільного віку <img class="category category_person" src="img/school_age.svg" alt="school">`)
 
 									else if(personAge<23)
-									resultTaskFour=(`<h3 class="task-caption task-caption_decision">Вхідні дані:</h3>
-													<div class="result-task result-task_decision">Вік людини складає: <span class="value-task value-task_view"> ${personAge} роки(ів) </span> </div>
-													<h3 class="task-caption task-caption_decision">Результати обчислень:</h3>
-													<div class="result-task result-task_decision">Людина відноситься до категорії: <span class="value-task value-task_view"> Студент </span> </div>
-													<img class="category category_person" src="img/student.svg" alt="student">`)
+									resultTaskFour=(`Студент <img class="category category_person" src="img/student.svg" alt="student">`)
 
 									else if(personAge<65)
-									resultTaskFour=(`<h3 class="task-caption task-caption_decision">Вхідні дані:</h3>
-													<div class="result-task result-task_decision">Вік людини складає: <span class="value-task value-task_view"> ${personAge} роки(ів) </span> </div>
-													<h3 class="task-caption task-caption_decision">Результати обчислень:</h3>
-													<div class="result-task result-task_decision">Людина відноситься до категорії: <span class="value-task value-task_view"> Працездатна особа (працівник) </span> </div>
-													<img class="category category_person" src="img/able-bodied.svg" alt="able-bodied">`)
+									resultTaskFour=(`Працездатна особа (працівник) <img class="category category_person" src="img/able-bodied.svg" alt="able-bodied">`)
 
 									else
-									resultTaskFour=(`<h3 class="task-caption task-caption_decision">Вхідні дані:</h3>
-													<div class="result-task result-task_decision">Вік людини складає: <span class="value-task value-task_view"> ${personAge} роки(ів) </span> </div>
-													<h3 class="task-caption task-caption_decision">Результати обчислень:</h3>
-													<div class="result-task result-task_decision">Людина відноситься до категорії: <span class="value-task value-task_view"> Пенсіонер </span> </div>
-													<img class="category category_person" src="img/pensioner.svg" alt="pensioner">`)
+									resultTaskFour=(`Пенсіонер <img class="category category_person" src="img/pensioner.svg" alt="pensioner">`)
 
-									document.write(resultTaskFour)
+									document.write(`<h3 class="task-caption task-caption_decision">Вхідні дані:</h3>
+													<div class="result-task result-task_decision">Вік людини складає: <span class="value-task value-task_view"> ${personAge} роки(ів) </span> </div>
+												 	<h3 class="task-caption task-caption_decision">Результати обчислень:</h3> <div class="result-task result-task_decision">Людина відноситься до категорії: <span class="value-task value-task_view"> ${resultTaskFour}</span></div>`)
 							</script>
 					</section>
 			</main>
