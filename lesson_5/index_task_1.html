@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="uk">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="shortcut icon" href="img/favicon_task.ico" type="image/x-icon">
+	<title>Завдання #1</title>
+</head>
+
+<body>
+	<div class="wrapper wrapper_block">
+
+		<header class="header header_container">
+			<div class="content content_head">
+				<img src="img/logo_lesson_5.svg" alt="logo" class="logo logo_lesson">
+				<h1 class="title title_lessons">Цикли</h1>
+			</div>
+		</header>
+
+		<main class="main main_block">
+
+			<div class="menu menu_navigation">
+				<a href="../lessons_main/index.html" target="_blank" title="Головне меню" class="icon icon_course"><img
+						src="img/home.svg" alt="main_menu"></a>
+				<a href="index.html" target="_blank" title="Назад" class="icon icon_up"><img src="img/level_up.svg"
+						alt="main_menu"></a>
+			</div>
+
+			<section class="tasks tasks_box">
+				<h3 class="caption caption_tasks-main">Завдання #1</h3>
+				<div class="depiction depiction_task">Вивести на екран номери місяців весни i літа (від 3 до 8)</div>
+				<a href=javascript:document.location.reload() title="Повторно виконати завдання"><img
+						src="img/repeat_task.svg" alt="task_start" class="repeat repeat_task"></a>
+			</section>
+
+			<section class="tasks tasks_box">
+				<h3 class="caption caption_tasks-main">Розв'язання завдання #1</h3>
+				<div class="depiction depiction_task">Перелік номерів місяців весни та літа:</div>
+				<h3 class="task-caption task-caption_decision">Результати обчислень:</h3>
+
+				<script>
+					for (let numMonthPeriod = 3; numMonthPeriod <= 8; numMonthPeriod++) {
+						switch (numMonthPeriod) {
+							case 3: document.write(`<div class="result-month result-month_decision">Березень</div>`)
+								break
+							case 4: document.write(`<div class="result-month result-month_decision">Квітень</div>`)
+								break
+							case 5: document.write(`<div class="result-month result-month_decision">Травень</div>`)
+								break
+							case 6: document.write(`<div class="result-month result-month_decision">Червень</div>`)
+								break
+							case 7: document.write(`<div class="result-month result-month_decision">Липень</div>`)
+								break
+							case 8: document.write(`<div class="result-month result-month_decision">Серпень</div>`)
+						}
+					}
+				</script>
+			</section>
+		</main>
+		<footer class="footer footer_block"></footer>
+	</div>
+</body>
+
+</html>
