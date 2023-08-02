@@ -47,7 +47,7 @@
 					<script>
 						const userNumEnter = parseInt(prompt('Визначить кількість випадкових чисел для генерування', 'Ввести значення'))
 						let randomNum
-						for (let conditionForMeanings = 1; conditionForMeanings <= userNumEnter; conditionForMeanings++) {
+						for (let condition = 1; condition <= userNumEnter; condition++) {
 							randomNum = Math.floor((Math.random() * 100) + 1)
 							document.write(`<li>${randomNum}</li>`)
 						}

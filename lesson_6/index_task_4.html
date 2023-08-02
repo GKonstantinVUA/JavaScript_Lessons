@@ -48,8 +48,8 @@
 				<script>
 					//Трикутник по лівому краю
 					let TriangleFromTheLetterODown = ''
-					for (let termsOfMeaningsLevel = 12; termsOfMeaningsLevel >= 1; termsOfMeaningsLevel--) {
-						for (let termsOfMeaningsLeter = 1; termsOfMeaningsLeter <= termsOfMeaningsLevel; termsOfMeaningsLeter++) {
+					for (let provision = 12; provision >= 1; provision--) {
+						for (let termsOfMeaningsLeter = 1; termsOfMeaningsLeter <= provision; termsOfMeaningsLeter++) {
 							TriangleFromTheLetterODown += 'o'
 						}
 						TriangleFromTheLetterODown += '<br>'
@@ -59,10 +59,10 @@
 					//Рівнобедренний трикутник
 					let TriangleFromTheLetterOLeveledDownVarTwo = ''
 					let flagCounter = 0
-					for (let termsOfMeaningsLevel = 12; termsOfMeaningsLevel > 0; termsOfMeaningsLevel--) {
+					for (let level = 12; level > 0; level--) {
 
-						for (let termsOfMeaningsLetter = 0; termsOfMeaningsLetter < 12; termsOfMeaningsLetter++) {
-							if (termsOfMeaningsLetter < flagCounter) {
+						for (let condition = 0; condition < 12; condition++) {
+							if (condition < flagCounter) {
 								TriangleFromTheLetterOLeveledDownVarTwo += '&nbsp'
 							}
 							else {

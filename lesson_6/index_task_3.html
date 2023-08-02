@@ -49,15 +49,15 @@
 				<script>
 					// Результати обчислень варіанта один
 					let TriangleFromTheLetterOUp = ''
-					for (let termsOfMeanings = 0; termsOfMeanings < 7; termsOfMeanings++) {
+					for (let provision = 0; provision < 7; provision++) {
 						TriangleFromTheLetterOUp += 'o'
 						document.write(`${TriangleFromTheLetterOUp}<br>`)
 					}
 
 					// Результати обчислень варіанта два
 					let TriangleFromTheLetterOUpVarTwo = ''
-					for (let termsOfMeaningsLevel = 0; termsOfMeaningsLevel < 7; termsOfMeaningsLevel++) {
-						for (let termsOfMeaningsLetters = 0; termsOfMeaningsLetters <= termsOfMeaningsLevel; termsOfMeaningsLetters++) {
+					for (let condition = 0; condition < 7; condition++) {
+						for (let symbol = 0; symbol <= condition; symbol++) {
 							TriangleFromTheLetterOUpVarTwo += 'o'
 						}
 						TriangleFromTheLetterOUpVarTwo += `<br>`
@@ -67,9 +67,9 @@
 
 					let TriangleFromTheLetterOLeveledUpVarThree = ''
 					let flagCounter = 6
-					for (let termsOfMeaningsLevel = 0; termsOfMeaningsLevel < 7; termsOfMeaningsLevel++) {
-						for (let termsOfMeaningsLetter = 0; termsOfMeaningsLetter < 7; termsOfMeaningsLetter++) {
-							if (termsOfMeaningsLetter < flagCounter) TriangleFromTheLetterOLeveledUpVarThree += '&nbsp'
+					for (let figure = 0; figure < 7; figure++) {
+						for (let letter = 0; letter < 7; letter++) {
+							if (letter < flagCounter) TriangleFromTheLetterOLeveledUpVarThree += '&nbsp'
 							else TriangleFromTheLetterOLeveledUpVarThree += 'o'
 						}
 						flagCounter--
