@@ -101,65 +101,12 @@ body {
 	margin-right: 15px;
 }
 
-.result-task_decision {
-	font: 700 16px Roboto, sans-serif;
-	line-height: 1.3;
-	color: #303032;
-}
-
 .task-caption_decision {
 	margin-top: 25px;
 	margin-bottom: 15px;
 }
 
-.value-task_view {
-	font: 500 16px Inter, sans-serif;
-	line-height: 1.3;
-	color: #113fd7;
-	padding: 0 0 0 35px;
-}
-
-.name-child_view {
-	font: 500 16px Inter, sans-serif;
-	line-height: 1.3;
-	color: #bc3d0e;
-}
-
-.result-task_error {
-	text-align: center;
-	text-transform: uppercase;
-	color: #d00000;
-}
-
-.result-task_congratulations {
-	text-align: center;
-	text-transform: uppercase;
-	color: #06a539;
-}
-
 /* Індивідуальні налаштуванння для сторінок із завданнями */
-
-.lottery_ticket {
-	display: block;
-	margin: 0 auto;
-}
-
-.money_not-buy,
-.money_buy {
-	display: inline-block;
-	position: relative;
-	top: -36px;
-	left: 0;
-}
-
-.category_person {
-	display: block;
-	margin: 20px auto;
-}
-
-.value-task_category-driver {
-	text-transform: uppercase;
-}
 
 .result-button_decision:not(:last-child) {
 	margin-right: 20px;
@@ -216,18 +163,13 @@ body {
 	font-size: 14px;
 }
 
-.task-table_decision{
+.task-table_decision {
 	border-collapse: collapse;
 	border: 2px solid gray;
 	margin: 0 auto;
 }
 
-.task-cell_decision{
+.task-cell_decision {
 	border: 2px solid gray;
 	padding: 7px;
 }
-
-
-style="display: inline-block; margin: 0 auto; border: 1px solid #101011; color: #94c02f; font-size: 20px;"
-
-style="min-width: 50px; line-height: 50px; margin: 3px; border: 1px solid #101011;"
