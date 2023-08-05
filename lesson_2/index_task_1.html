@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="uk">
+
 <head>
 	<meta charset="UTF-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -8,6 +9,7 @@
 	<link rel="shortcut icon" href="img/favicon_task.ico" type="image/x-icon">
 	<title>Завдання #1</title>
 </head>
+
 <body>
 	<div class="wrapper wrapper_block">
 
@@ -21,32 +23,35 @@
 		<main class="main main_block">
 
 			<div class="menu menu_navigation">
-				<a href="../lessons_main/index.html" target="_blank" title="Головне меню" class="icon icon_course"><img src="img/home.svg" alt="main_menu"></a>
-				<a href="index.html" target="_blank" title="Назад" class="icon icon_up"><img src="img/level_up.svg" alt="main_menu"></a>
+				<a href="../lessons_main/index.html" target="_blank" title="Головне меню" class="icon icon_course"><img
+						src="img/home.svg" alt="main_menu"></a>
+				<a href="index.html" target="_blank" title="Назад" class="icon icon_up"><img src="img/level_up.svg"
+						alt="main_menu"></a>
 			</div>
 
-				<section class="tasks tasks_box">
-					<h3 class="caption caption_tasks-main">Завдання #1</h3>
-					<div class="depiction depiction_task">Знайти суму, добуток та частку двох дійсних чисел.</div>
-					<div class="depiction depiction_task">Результат вивести у формі таблиці.</div>
-					<a href=javascript:document.location.reload() title="Повторно виконати завдання"><img src="img/repeat_task.svg" alt="task_start" class="repeat repeat_task"></a>
-				</section>
+			<section class="tasks tasks_box">
+				<h3 class="caption caption_tasks-main">Завдання #1</h3>
+				<div class="depiction depiction_task">Знайти суму, добуток та частку двох дійсних чисел.</div>
+				<div class="depiction depiction_task">Результат вивести у формі таблиці.</div>
+				<a href=javascript:document.location.reload() title="Повторно виконати завдання"><img
+						src="img/repeat_task.svg" alt="task_start" class="repeat repeat_task"></a>
+			</section>
 
-				<section class="tasks tasks_box">
-					<h3 class="caption caption_tasks-main">Розв'язання завдання #1</h3>
-					<div class="depiction depiction_task">Знаходження суми, добутка та частки двох дійсних чисел:</div>
+			<section class="tasks tasks_box">
+				<h3 class="caption caption_tasks-main">Розв'язання завдання #1</h3>
+				<div class="depiction depiction_task">Знаходження суми, добутка та частки двох дійсних чисел:</div>
 
-			<script>
-				let firstFloatValue=parseFloat(prompt('Введіть перше дійсне значення', 'Введіть значення'))
-				let secondFloatValue=parseFloat(prompt('Введіть друге дійсне значення', 'Введіть значення'))
-				
+				<script>
+					let firstFloatValue = parseFloat(prompt('Введіть перше дійсне значення', 'Введіть значення'))
+					let secondFloatValue = parseFloat(prompt('Введіть друге дійсне значення', 'Введіть значення'))
 
-				let amountFloatsValues=firstFloatValue+secondFloatValue
-				let productFloatsValues=firstFloatValue*secondFloatValue
-				let remainderFloatsValues=firstFloatValue/secondFloatValue
 
-				
-				document.write(`
+					let amountFloatsValues = firstFloatValue + secondFloatValue
+					let productFloatsValues = firstFloatValue * secondFloatValue
+					let remainderFloatsValues = firstFloatValue / secondFloatValue
+
+
+					document.write(`
 				<h3 class="task-caption task-caption_decision">Вхідні дані:</h3>
 				
 				<table class="date data_initial">
@@ -68,7 +73,7 @@
 
 				</table>`)
 
-				document.write(`
+					document.write(`
 				<h3 class="task-caption task-caption_decision">Результати обчислень:</h3>
 				
 				<table class="date data_initial">
@@ -93,10 +98,11 @@
 						<td> ${remainderFloatsValues} </td>
 					</tr>
 				</table>`)
-			</script>
-		</section>
+				</script>
+			</section>
 		</main>
 		<footer class="footer footer_block"></footer>
 	</div>
 </body>
+
 </html>

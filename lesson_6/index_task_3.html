@@ -43,18 +43,19 @@
 			<section class="tasks tasks_box">
 				<h3 class="caption caption_tasks-main">Розв'язання завдання #3</h3>
 				<div class="depiction depiction_task">Фігури трикутників за допомогою символів «о»:</div>
-				<h3 class="task-caption task-caption_decision">Результати обчислень для варіанта трикутника #1
-					представлено двух варіантах вирішення:</h3>
+				<h3 class="task-caption task-caption_decision">Результати обчислень:</h3>
+				<h3 class="task-caption task-caption_decision">Трикутник #1 (варіант №1)</h3>
 
 				<script>
-					// Результати обчислень варіанта один
 					let TriangleFromTheLetterOUp = ''
 					for (let provision = 0; provision < 7; provision++) {
 						TriangleFromTheLetterOUp += 'o'
 						document.write(`${TriangleFromTheLetterOUp}<br>`)
 					}
+				</script>
 
-					// Результати обчислень варіанта два
+				<h3 class="task-caption task-caption_decision">Трикутник #1 (варіант №2)</h3>
+				<script>
 					let TriangleFromTheLetterOUpVarTwo = ''
 					for (let condition = 0; condition < 7; condition++) {
 						for (let symbol = 0; symbol <= condition; symbol++) {
@@ -63,8 +64,10 @@
 						TriangleFromTheLetterOUpVarTwo += `<br>`
 					}
 					document.write(`${TriangleFromTheLetterOUpVarTwo}`)
+				</script>
 
-
+				<h3 class="task-caption task-caption_decision">Трикутник #2</h3>
+				<script>
 					let TriangleFromTheLetterOLeveledUpVarThree = ''
 					let flagCounter = 6
 					for (let figure = 0; figure < 7; figure++) {
@@ -77,6 +80,9 @@
 					}
 					document.write(`${TriangleFromTheLetterOLeveledUpVarThree}`)
 				</script>
+
+
+
 			</section>
 		</main>
 		<footer class="footer footer_block"></footer>

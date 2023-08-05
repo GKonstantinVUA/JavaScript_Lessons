@@ -43,20 +43,10 @@
 
 				<script>
 					for (let month = 3; month <= 8; month++) {
-						switch (month) {
-							case 3: document.write(`<div class="result-month result-month_decision">Березень</div>`)
-								break
-							case 4: document.write(`<div class="result-month result-month_decision">Квітень</div>`)
-								break
-							case 5: document.write(`<div class="result-month result-month_decision">Травень</div>`)
-								break
-							case 6: document.write(`<div class="result-month result-month_decision">Червень</div>`)
-								break
-							case 7: document.write(`<div class="result-month result-month_decision">Липень</div>`)
-								break
-							case 8: document.write(`<div class="result-month result-month_decision">Серпень</div>`)
-						}
+						document.write(`<div class="result-month result-month_decision">${month}</div>`)
 					}
+
+
 				</script>
 			</section>
 		</main>

@@ -45,8 +45,8 @@
 				<div class="depiction depiction_task">Фігури трикутників за допомогою символів «о»:</div>
 				<h3 class="task-caption task-caption_decision">Результати обчислень:</h3>
 
+				<h3 class="task-caption task-caption_decision">Трикутник #1 (варіант №1)</h3>
 				<script>
-					//Трикутник по лівому краю
 					let TriangleFromTheLetterODown = ''
 					for (let provision = 12; provision >= 1; provision--) {
 						for (let termsOfMeaningsLeter = 1; termsOfMeaningsLeter <= provision; termsOfMeaningsLeter++) {
@@ -55,8 +55,10 @@
 						TriangleFromTheLetterODown += '<br>'
 					}
 					document.write(`${TriangleFromTheLetterODown}`)
+				</script>
 
-					//Рівнобедренний трикутник
+				<h3 class="task-caption task-caption_decision">Трикутник #1 (варіант №2)</h3>
+				<script>
 					let TriangleFromTheLetterOLeveledDownVarTwo = ''
 					let flagCounter = 0
 					for (let level = 12; level > 0; level--) {

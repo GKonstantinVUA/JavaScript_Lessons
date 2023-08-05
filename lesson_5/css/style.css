@@ -165,11 +165,28 @@ body {
 
 .task-table_decision {
 	border-collapse: collapse;
-	border: 2px solid gray;
+	border: 1.5px solid gray;
 	margin: 0 auto;
 }
 
 .task-cell_decision {
-	border: 2px solid gray;
+	border: 1.5px solid gray;
 	padding: 7px;
+}
+
+.pouring_title-table th {
+	background: orangered;
+	color: aliceblue;
+	font-size: 14px;
+}
+
+th,
+td {
+	border: 1.5px solid gray;
+	padding: 7px;
+}
+
+td {
+	text-align: center;
+	font-size: 18px;
 }

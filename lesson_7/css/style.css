@@ -40,10 +40,10 @@ body {
 
 .main_block {
 	max-width: 800px;
-	height: 1700px;
+	height: 1400px;
 	margin: 0 auto 20px;
 	padding: 45px 15px;
-	background: url("../img/bg_lesson.webp") 0 0/ 800px 1700px no-repeat;
+	background: url("../img/bg_lesson.webp") 0 0/ 800px 1400px no-repeat;
 }
 
 .footer_block {
@@ -108,6 +108,34 @@ body {
 
 /* Індивідуальні налаштуванння для сторінок із завданнями */
 
-.img_task {
-	margin: 15px 0;
+.status_under-task {
+	font-size: 18px;
+	color: rgb(238, 26, 11);
+}
+
+.task-table_decision {
+	border-collapse: collapse;
+	border: 1px solid gray;
+	margin: 0 auto;
+}
+
+.pouring_title-table th {
+	background: orangered;
+	color: aliceblue;
+	font-size: 12px;
+}
+
+th,
+td {
+	border: 1px solid gray;
+	padding: 7px;
+}
+
+td {
+	text-align: center;
+	font-size: 14px;
+}
+
+.depiction_separately {
+	margin-bottom: 25px;
 }
