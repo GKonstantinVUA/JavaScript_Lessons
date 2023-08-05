@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="uk">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="shortcut icon" href="img/favicon_task.ico" type="image/x-icon">
+	<title>Завдання #4</title>
+</head>
+
+<body>
+	<div class="wrapper wrapper_block">
+
+		<header class="header header_container">
+			<div class="content content_head">
+				<img src="img/logo_lesson.svg" alt="logo" class="logo logo_lesson">
+				<h1 class="title title_lessons">Функції</h1>
+			</div>
+		</header>
+
+		<main class="main main_block">
+
+			<div class="menu menu_navigation">
+				<a href="../lessons_main/index.html" target="_blank" title="Головне меню" class="icon icon_course"><img
+						src="img/home.svg" alt="main_menu"></a>
+				<a href="index.html" target="_blank" title="Назад" class="icon icon_up"><img src="img/level_up.svg"
+						alt="main_menu"></a>
+			</div>
+
+			<section class="tasks tasks_box">
+				<h3 class="caption caption_tasks-main">Завдання #4</h3>
+				<div class="depiction depiction_task">Створити функцію, яка для 3 заданих чисел</div>
+				<div class="depiction depiction_task">знаходить одночасно декілька результатів:</div>
+				<div class="depiction depiction_task">кількість парних, кількість додатних, кількість більших за 100.
+					<a href=javascript:document.location.reload() title="Повторно виконати завдання"><img
+							src="img/repeat_task.svg" alt="task_start" class="repeat repeat_task"></a>
+			</section>
+
+			<section class="tasks tasks_box">
+				<h3 class="caption caption_tasks-main">Розв'язання завдання #4 <span
+						class="status status_under-task">(На
+						перевірку)</span></h3>
+				<div class="depiction depiction_task">Порівняння значень за допомогою однієї функції згідно умови
+					завдання.</div>
+				<h3 class="task-caption task-caption_decision">Результати обчислень:</h3>
+
+				<script>
+					let generalResult = (...valuesList) => {
+						let numberOfPaired = 0
+						let numberOfPositive = 0
+						let moreThanAHundred = 0
+
+						for (let condition = 0; condition < valuesList.length; condition++) {
+							if (valuesList[condition] % 2 === 0) {
+								numberOfPaired++
+							}
+						}
+
+						for (let condition = 0; condition < valuesList.length; condition++) {
+							if (valuesList[condition] > 0) {
+								numberOfPositive++
+							}
+						}
+
+						for (let condition = 0; condition < valuesList.length; condition++) {
+							if (valuesList[condition] > 100) {
+								moreThanAHundred++
+							}
+						}
+
+						return [numberOfPaired, numberOfPositive, moreThanAHundred]
+					}
+					let valueFirst = parseInt(prompt('Введіть перше значення', 'Введіть ціле значення'))
+					let valueSecond = parseInt(prompt('Введіть друге значення', 'Введіть ціле значення'))
+					let valueThird = parseInt(prompt('Введіть друге значення', 'Введіть ціле значення'))
+
+					let resultOfTheArray = generalResult(valueFirst, valueSecond, valueThird)
+
+					document.write(`Загальна кількість парних чисел складає: ${resultOfTheArray[0]} <br>
+		Загальна кількість додатних чисел складає: ${resultOfTheArray[1]} <br>
+		Загальна кількість чисел більших за 100 складає: ${resultOfTheArray[2]}`)
+				</script>
+			</section>
+		</main>
+		<footer class="footer footer_block"></footer>
+	</div>
+</body>
+
+</html>

@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="uk">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="shortcut icon" href="img/favicon_task.ico" type="image/x-icon">
+	<title>Завдання #2</title>
+</head>
+
+<body>
+	<div class="wrapper wrapper_block">
+
+		<header class="header header_container">
+			<div class="content content_head">
+				<img src="img/logo_lesson.svg" alt="logo" class="logo logo_lesson">
+				<h1 class="title title_lessons">Функції</h1>
+			</div>
+		</header>
+
+		<main class="main main_block">
+
+			<div class="menu menu_navigation">
+				<a href="../lessons_main/index.html" target="_blank" title="Головне меню" class="icon icon_course"><img
+						src="img/home.svg" alt="main_menu"></a>
+				<a href="index.html" target="_blank" title="Назад" class="icon icon_up"><img src="img/level_up.svg"
+						alt="main_menu"></a>
+			</div>
+
+			<section class="tasks tasks_box">
+				<h3 class="caption caption_tasks-main">Завдання #2</h3>
+				<div class="depiction depiction_task">Створити функцію, яка за номером дня дозволяє з’ясувати</div>
+				<div class="depiction depiction_task">чи є цей день робочим.</div>
+				<a href=javascript:document.location.reload() title="Повторно виконати завдання"><img
+						src="img/repeat_task.svg" alt="task_start" class="repeat repeat_task"></a>
+			</section>
+
+			<section class="tasks tasks_box">
+				<h3 class="caption caption_tasks-main">Розв'язання завдання #2</h3>
+				<div class="depiction depiction_task">Робочий чи не робочий день за номером.</div>
+				<h3 class="task-caption task-caption_decision">Результати обчислень:</h3>
+
+				<script>
+					function dayOfTheWeek(day) {
+						let numberDay
+						switch (day) {
+							case '1':
+							case '2':
+							case '3':
+							case '4':
+							case '5':
+								numberDay = 'Введений номер дня тижня відноситься до робочого дня'
+								break;
+							case '6':
+							case '7':
+								numberDay = 'Введений номер дня тижня відноситься не до робочого дня'
+								break;
+							default: numberDay = 'Значення введено помилково'
+						}
+						return numberDay
+					}
+					let enterNumberDay = prompt('Введіть номер дня тижня', 'Введіть значення')
+					document.write(dayOfTheWeek(enterNumberDay))
+
+				</script>
+			</section>
+		</main>
+		<footer class="footer footer_block"></footer>
+	</div>
+</body>
+
+</html>

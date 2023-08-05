@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="uk">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="shortcut icon" href="img/favicon_task.ico" type="image/x-icon">
+	<title>Завдання #0</title>
+</head>
+
+<body>
+	<div class="wrapper wrapper_block">
+
+		<header class="header header_container">
+			<div class="content content_head">
+				<img src="img/logo_lesson.svg" alt="logo" class="logo logo_lesson">
+				<h1 class="title title_lessons">Функції</h1>
+			</div>
+		</header>
+
+		<main class="main main_block">
+
+			<div class="menu menu_navigation">
+				<a href="../lessons_main/index.html" target="_blank" title="Головне меню" class="icon icon_course"><img
+						src="img/home.svg" alt="main_menu"></a>
+				<a href="index.html" target="_blank" title="Назад" class="icon icon_up"><img src="img/level_up.svg"
+						alt="main_menu"></a>
+			</div>
+
+			<section class="tasks tasks_box">
+				<h3 class="caption caption_tasks-main">Завдання #0</h3>
+				<div class="depiction depiction_task">Створити функцію, яка за номером місяця повертає пору року,</div>
+				<div class="depiction depiction_task">до якої відноситься цей місяць.</div>
+				<a href=javascript:document.location.reload() title="Повторно виконати завдання"><img
+						src="img/repeat_task.svg" alt="task_start" class="repeat repeat_task"></a>
+			</section>
+
+			<section class="tasks tasks_box">
+				<h3 class="caption caption_tasks-main">Розв'язання завдання #0</h3>
+				<div class="depiction depiction_task">Повернення пори року за номером місяца.</div>
+				<h3 class="task-caption task-caption_decision">Результати обчислень:</h3>
+
+				<script>
+					function getSeason(period) {
+						let resultSeason
+						switch (period) {
+							case '12':
+							case '1':
+							case '2':
+								resultSeason = 'Зима'
+								break;
+
+							case '3':
+							case '4':
+							case '5':
+								resultSeason = 'Весна'
+								break;
+
+							case '6':
+							case '7':
+							case '8':
+								resultSeason = 'Літо'
+								break;
+
+							case '9':
+							case '10':
+							case '11':
+								resultSeason = 'Осінь'
+								break;
+
+							default:
+								resultSeason = 'Значення введено помилково'
+						}
+						return resultSeason
+					}
+
+					let enterValue = (prompt('Введіть номер місяця', 'Номер місяця'))
+					document.write(getSeason(enterValue))
+
+				</script>
+			</section>
+		</main>
+		<footer class="footer footer_block"></footer>
+	</div>
+</body>
+
+</html>

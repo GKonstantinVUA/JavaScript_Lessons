@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="uk">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="shortcut icon" href="img/favicon_task.ico" type="image/x-icon">
+	<title>Завдання #7</title>
+</head>
+
+<body>
+	<div class="wrapper wrapper_block">
+
+		<header class="header header_container">
+			<div class="content content_head">
+				<img src="img/logo_lesson.svg" alt="logo" class="logo logo_lesson">
+				<h1 class="title title_lessons">Функції</h1>
+			</div>
+		</header>
+
+		<main class="main main_block">
+
+			<div class="menu menu_navigation">
+				<a href="../lessons_main/index.html" target="_blank" title="Головне меню" class="icon icon_course"><img
+						src="img/home.svg" alt="main_menu"></a>
+				<a href="index.html" target="_blank" title="Назад" class="icon icon_up"><img src="img/level_up.svg"
+						alt="main_menu"></a>
+			</div>
+
+			<section class="tasks tasks_box">
+				<h3 class="caption caption_tasks-main">Завдання #7</h3>
+				<div class="depiction depiction_task">Створити функцію, яка випадковим чином виводить на екран</div>
+				<div class="depiction depiction_task">одне із 4 зображень (шляхи до зображень передаються у функцію)
+				</div>
+				<a href=javascript:document.location.reload() title="Повторно виконати завдання"><img
+						src="img/repeat_task.svg" alt="task_start" class="repeat repeat_task"></a>
+			</section>
+
+			<section class="tasks tasks_box">
+				<h3 class="caption caption_tasks-main">Розв'язання завдання #7 <span
+						class="status status_under-task">(На
+						перевірку)</span></h3>
+				<div class="depiction depiction_task">Рандомні зображення.</div>
+				<h3 class="task-caption task-caption_decision">Результати обчислень:</h3>
+
+				<script>
+					let generationOfImages = (viewImagesOne, viewImagesTwo, viewImagesThree, viewImagesFour) => {
+
+						const startGenerationValue = 1, endGenerationValue = 4
+						let randomId = startGenerationValue + Math.floor(Math.random() * endGenerationValue)
+						let generationImage
+						switch (randomId) {
+							case 1:
+								generationImage = viewImagesOne
+								break;
+							case 2:
+								generationImage = viewImagesTwo
+								break;
+							case 3:
+								generationImage = viewImagesThree
+								break;
+							case 4:
+								generationImage = viewImagesFour
+								break;
+						}
+						return `<img src="${generationImage}" alt="logo">`
+
+					}
+					let thePathToTheImageOne = "img/tasks/html.svg", thePathToTheImageTwo = "img/tasks/css.svg", thePathToTheImageThree = "img/tasks/js.svg", thePathToTheImageFour = "img/tasks/node.svg"
+
+					document.write(generationOfImages(thePathToTheImageOne, thePathToTheImageTwo, thePathToTheImageThree, thePathToTheImageFour))
+				</script>
+				<h3 class="task-caption task-caption_decision">Результати обчислень (варіант #2):</h3>
+				<div class="depiction depiction_task">Більш мінімізований варіант вирішення завдання, з боку
+					використання коду, за умови,</div>
+				<div class="depiction depiction_task">що у діючому проекті найменування зображень має саме такий вид
+				</div>
+				<div class="depiction depiction_task depiction_separately">(що може бути мало вірогідним)</div>
+
+				<script>
+					let getImage = () => {
+						const minRandomValue = 1, maxRamdomValue = 4
+						let randomValue = minRandomValue + Math.floor(Math.random() * (maxRamdomValue - minRandomValue + 1))
+						let viewImage = `<img src="img/tasks/${randomValue}.svg" alt="logo">`
+						return viewImage
+					}
+					document.write(`${getImage()}`)
+				</script>
+
+			</section>
+		</main>
+		<footer class="footer footer_block"></footer>
+	</div>
+</body>
+
+</html>
